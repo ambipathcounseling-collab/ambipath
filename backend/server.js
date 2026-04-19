@@ -53,7 +53,7 @@ const frontendPath = path.join(__dirname, '../frontend');
 app.use(express.static(frontendPath));
 
 // MongoDB Connection
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ambipath';
+const dbURI = process.env.MONGODB_URI;
 
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
